@@ -1,0 +1,415 @@
+
+/*ADMIN SECTION*/
+
+/*login page*/
+body{
+    font-family: "roboto-regular";
+    background-color: rgb(230, 230, 230);
+    padding: 20px 20px 0px 20px;
+    margin-left: 300px;
+}
+#admin_login{
+    background-image: linear-gradient( rgba(2, 92, 39, 0.7), rgba(0, 0, 0, 0.7)), url('../images/admin/login-bg.jpg');
+    background-size:cover;
+	background-repeat:no-repeat;
+    background-position: center, center;
+    height: 100%;
+    padding: 70px 0px;
+    margin-left: 0px;
+}
+#admin_login .login-logo img{
+    width: 100%;
+}
+#admin_login .box{
+    width:100%;
+    border-radius: 3px;
+    height: 350px;
+    background-color: rgb(221, 221, 221);
+    box-shadow: rgba(0,0,0,0.4) 30px 10px 50px;
+    padding:20px;
+}
+#admin_login .login .header{
+    color: white;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 0.8em;
+}
+#admin_login form input{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    color: rgb(70, 70, 70);
+    font-size: 0.8em;
+}
+#admin_login form button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    background-color: rgb(34, 80, 204);
+    color:white;
+    cursor: pointer;
+}
+
+/*Navbar*/
+nav{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding: 5px 0px;
+}
+nav .navbar{
+    font-size: 1.0em;
+    color: rgb(116, 116, 116);
+}
+nav .navbar .menu-icon{
+    z-index: 1000;
+    cursor: pointer;
+}
+nav .title .admin{
+    color: rgb(165, 165, 165);
+}
+nav .title .panel{
+    color: rgb(116, 116, 116);
+}
+
+nav .sign-out{
+    border:unset;
+    background-color: rgb(236, 70, 70);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav .sign-out:hover{
+    opacity: 0.5;
+}
+
+nav .sidebar{
+    height: 100%;
+    width: 300px;
+    background-color: rgb(123, 23, 189);
+    overflow: hidden;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 999;
+}
+.sidebar .admin-image{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+.sidebar .admin-image h6{
+    font-size: 0.9em;
+    color: rgb(228, 228, 228);
+}
+.sidebar .admin-image  img{
+    width: 100px;
+}
+
+.sidebar .add-product{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sidebar .add-product button{
+    border: unset;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(90, 125, 221);
+    font-size: 0.8em;
+    cursor: pointer;
+}
+.sidebar .add-product button:hover{
+    opacity:.8;
+}
+.sidebar .links{
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.sidebar .links ul{
+    padding-left: 0;
+}
+.sidebar .links li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.sidebar .links li:hover{
+    background-color: rgb(167, 59, 238);
+}
+.sidebar .links li .fa, .sidebar .links li .fab{
+    font-size: 1.3em;
+    width:35px
+}
+
+@media (max-width: 576px) {
+    nav .sidebar{
+        height: 100%;
+        width: 300px;
+        background-color: rgb(123, 23, 189);
+        overflow: hidden;
+        position: absolute;
+        top:0px;
+        left: -300px;
+        z-index: 999;
+    }
+    body{
+        margin-left: 0px;
+    }
+}
+
+/* main */
+section.main{
+    padding-top: 50px; 
+}
+
+.page-title{
+    color: rgb(165, 165, 165);
+}
+
+.filter .sort-button button{
+    border: unset;
+    background-color: unset;
+    color: rgb(116, 116, 116);
+    cursor: pointer;
+}
+
+.filter .sort-button form{
+   display: inline;
+}
+
+.filter input{
+    border: unset;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(116, 116, 116);
+}
+
+.table-wrapper{
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    padding:20px;
+}
+
+table .title{
+    color: rgb(116, 116, 116);
+    font-size: 0.8em;
+}
+table .data{
+    color: rgb(49, 49, 49);
+}
+
+
+/*Categories*/
+
+#categories .box{
+    width:100%;
+    border-radius: 3px;
+    height: 350px;
+    background-color: rgb(221, 221, 221);
+    box-shadow: rgba(0,0,0,0.4) 30px 10px 50px;
+    padding:20px;
+    position: relative;
+}
+.category-product-count{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    padding: 2px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+#categories .box .name{
+    color: rgb(49, 49, 49);
+}
+#categories .box .description{
+    color: rgb(116, 116, 116);
+    font-size: 0.8em;
+}
+#categories .box button.edit{
+    border: unset;
+    background-color: unset;
+    font-size:1.2em;
+    position: absolute;
+    bottom: 5px;
+    left:5px;
+    cursor: pointer;
+}
+#categories .box button.trash{
+    border: unset;
+    background-color: unset;
+    font-size:1.2em;
+    position: absolute;
+    bottom: 5px;
+    right:5px;
+    cursor: pointer;
+}
+
+.modal .title{
+    font-size: 1.0em;
+    color: rgb(116, 116, 116);
+}
+
+.modal-body{
+    background-color: rgb(221, 221, 221);
+    color: rgb(116, 116, 116);
+}
+
+.modal input[type = text]{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    color: rgb(70, 70, 70);
+    font-size: 0.8em;
+}
+.modal textarea{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    color: rgb(70, 70, 70);
+    font-size: 0.8em;
+}
+.file-input-wrapper{
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    width: 200px;
+    height: 70px;
+    color: rgb(70, 70, 70);
+}
+.file_input{
+    opacity: 0;
+    cursor: pointer;
+    height: 50px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    color: rgb(70, 70, 70);
+}
+.file-input-wrapper input, .file-input-wrapper button{
+    color: rgb(70, 70, 70);
+}
+
+#uploading{
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    border-radius: 10px;
+}
+#uploading img{
+    width: inherit;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    border:unset;
+}
+
+.category-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all .5s;
+}
+.category-image:hover{
+    object-fit: contain;
+}
+
+/* mini loader */
+.lds-dual-ring {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #161616;
+    border-color: rgb(12, 180, 12) transparent rgb(12, 180, 12) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Product */
+
+  select.category{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    color: rgb(70, 70, 70);
+    font-size: 0.8em;
+  }
+  
+  .gallerycontainer img{
+      width: 100%;
+      height: 100px;
+      object-fit: contain;
+  }
+
+  .products-table img{
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+  }
+
+ .edit-product input[type = text]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    color: rgb(70, 70, 70);
+    font-size: 0.8em;
+}
+
+.edit-product textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    color: rgb(70, 70, 70);
+    font-size: 0.8em;
+}
+
+.edit-product label{
+    font-size: 0.8em;
+    color: rgb(116, 116, 116);
+}
+.edit-product select.category{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.form-error{
+    font-size:0.8em;
+}

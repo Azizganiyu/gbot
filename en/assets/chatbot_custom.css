@@ -1,0 +1,130 @@
+
+/*ADMIN SECTION*/
+
+/*login page*/
+body{
+    font-family: "roboto-regular";
+    background-color: rgb(230, 230, 230);
+    position: relative;
+}
+
+/*Navbar*/
+nav{
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    position: absolute;
+    top:0;
+}
+nav .title .gadget{
+    color: rgb(165, 165, 165);
+}
+nav .title .store{
+    color: rgb(236, 70, 70);
+}
+
+.navbar select.language{
+    margin-top: 0px;
+    margin-right: 50px;
+    padding: 10px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 5px;
+    color: rgb(70, 70, 70);
+    font-size: 0.8em;
+}
+
+
+@media (max-width: 500px) {
+    .navbar select.language{
+        display: none;
+    }
+}
+
+/* HOME */
+section{
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+section.chat-banner{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../images/background2.jpg');
+    background-size:cover;
+	background-repeat:no-repeat;
+    background-position: center, center;
+    color: white;
+    text-align: center;
+    font-family: "montserrat-regular";
+}
+.chat{
+    margin-top:50px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/chatbot/background.png');
+    background-size:cover;
+	background-repeat:no-repeat;
+    background-position: center, center;
+    border-radius: 20px;
+    position: relative;
+    cursor: text;
+}
+.chat-input{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 10px;
+    border-top: 1px solid gray;
+    caret-color: rgb(226, 27, 61);
+    font-size: 0.8em;
+}
+.chat-input button{
+    background-color: rgb(255, 255, 255);
+    border: unset;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.chat-input .message-input{
+    width: 70%;
+    border: unset;
+    border-radius: 10px;
+    color: rgb(53, 53, 53);
+    padding: 5px 20px;
+}
+
+.chat-body{
+    margin-top: 10px;
+    padding: 20px;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+.chat-body .reply{
+    position: relative;
+    width:70%;
+    margin-bottom: 20px;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(19, 19, 19);
+    font-size: 0.8em;
+    padding: 10px;
+    text-align: left;
+}
+.chat-body .message{
+    width:70%;
+    margin: 20px 0% 20px 30%;
+    background-color: rgb(207, 207, 207);
+    border-radius: 5px;
+    color: rgb(19, 19, 19);
+    font-size: 0.8em;
+    padding: 10px;
+    text-align: left;
+}
+
+.chat-body::-webkit-scrollbar-track {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
